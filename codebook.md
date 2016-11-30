@@ -2,7 +2,10 @@
 #Variables
 - subject : Numbers indicate the participants in the test
 - activity : Names of tested activity 
-- tBodyAcc : Time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. But features are normalized and bounded within [-1,1]
+
+
+Time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. But features are normalized and bounded within [-1,1]
+- tBodyAcc-mean()  
 - tBodyAcc-std()
 - tGravityAcc-mean()
 - tGravityAcc-std()
@@ -44,4 +47,4 @@
 - fBodyBodyGyroJerkMag-std()
 - fBodyBodyGyroJerkMag-meanFreq()
 
-"end"
+
