@@ -1,4 +1,5 @@
 library(plyr)
+library (data.table)
 
 #1
 x_train <- read.table("train/X_train.txt")
@@ -15,7 +16,7 @@ sub_data <- rbind(sub_train, sub_test)
 
 #2
 features <- read.table("features.txt")
-mean_and_std <- grep("-(mean|std)\\(\\)", features[, 2])
+mean_and_std <- grep("-(mean|std)", features[, 2])
 x_data <- x_data[,mean_and_std]
 names(x_data) <- features[mean_and_std, 2]
 
@@ -32,5 +33,5 @@ all_data <- cbind(x_data, y_data, sub_data)
 
 
 #5
-averages_data <- ddply(all_data, .(subject, activity), function(x) colMeans(x[,1:66]))
+averages_data <- ddply(all_data, .(subject, activity), function(x) colMeans(x[,1:79]))
 write.table(averages_data, "averages_data.txt", row.names = FALSE)
