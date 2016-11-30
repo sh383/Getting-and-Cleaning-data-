@@ -3,4 +3,4 @@
 
 - codebook.md : contains informations on variables and explains anlysis.
 
-- average_data.txt : is the final product that is cleaned up.
+- averages_data.txt : is the final product that is cleaned up.
