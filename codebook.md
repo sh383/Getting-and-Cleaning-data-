@@ -46,6 +46,8 @@ Time domain signals (prefix 't' to denote time) were captured at a constant rate
 - tBodyGyroMag.std.. 
 - tBodyGyroJerkMag.mean.. 
 - tBodyGyroJerkMag.std.. 
+
+'f' to indicate frequency domain signals
 - fBodyAcc.mean...X 
 - fBodyAcc.mean...Y 
 - fBodyAcc.mean...Z 
